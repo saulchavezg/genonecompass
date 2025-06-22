@@ -1,13 +1,17 @@
+/* Header / Navbar */
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .main {
+    position: fixed;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url("1.jpg");
+    background: linear-gradient(to top, rgba(194, 184, 184, 0.5)20%, rgba(194, 184, 184, 0.5)20%);
     background-position: center;
     background-size: cover;
+    z-index: 5 ;
     height: 109vh;
 }
 
@@ -15,6 +19,11 @@
     width: 1200px;
     height: 75px;
     margin: auto;
+    margin-right: auto;
+    align-items: center;
+
+    display: flex;
+    align-items: center;
 }
 
 .icon {
@@ -26,14 +35,28 @@
 .logo {
     color: red;
     font-size: 35px;
+    position: relative;
+    left: -150px;
     font-family: Arial;
     padding-left: 20px;
-}
+    align-self: flex-end;
+    display: flex;
+    transform: translateY(25px);
+
+} 
 
 .menu {
     width: 400px;
     float: left;
     height: 70px;
+}
+
+.menu ul li a {
+    font-size: 18px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
 }
 
 ul {
@@ -58,3 +81,83 @@ ul li a {
     transition: 0.4s ease-in-out;
 }
 
+/* Header / Navbar */
+
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+
+
+}
+
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section .hero-details .description {
+    margin-top: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+
+}
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px
+
+
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-size-medium);
+    transition: 0.3s ease;
+
+}
+
+.hero-section .hero-details .button:hover {
+    background: transparent;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.hero-section .hero-details .contact-info {
+    color: var(--white-color);
+    border-color: white;
+    background: transparent;
+}
+
+.hero-section .hero-details .contact-info:hover {
+    color: var(--primary-color);
+    border-color: (--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.hero-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 10%;
+}
