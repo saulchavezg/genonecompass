@@ -1,9 +1,25 @@
-/* Header / Navbar */
-
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
+:root {
+    --primary-color: #f9f8f3;
+    --secondary-color: #000000;
+    --white-color: #ffffff;
+    --font-size-xxl: 3rem;
+    --font-size-xl: 2rem;
+    --font-size-l: 1.5rem;
+    --font-size-m: 1.2rem;
+    --font-weight-semibold: 600;
+    --border-radius-m: 8px;
+}
+
+/* Header / Navbar */
 
 .main {
     width: 100%;
@@ -138,7 +154,7 @@ ul li {
 }
 
 .hero-section .hero-details .description {
-    margin-top: 70%;
+    margin-top: 200%;
     margin: 24px 0 40px;
     font-size: var(--font-size-m);
 
