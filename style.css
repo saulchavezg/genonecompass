@@ -211,18 +211,13 @@ ul li {
     background-color: var(--secondary-color);
 }
 
-.hero-section .hero-details .hero-image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
 
-.hero-section .hero-details .hero-quote {
+
+.hero-image-wrapper .hero-quote {
     color: black;
+    text-align: center;
 }
 /* Hero Section End */
 
   
-
 
