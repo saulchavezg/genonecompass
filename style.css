@@ -140,10 +140,7 @@ ul li {
 .hero-section .section-content {
     display: flex;
     align-items: flex-start;
-    color: var(--white-color);
     justify-content: space-between;
-
-
 }
 
 .hero-section .hero-details .title{
@@ -214,7 +211,16 @@ ul li {
     background-color: var(--secondary-color);
 }
 
+.hero-section .hero-details .hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
 
+.hero-section .hero-details .hero-quote {
+    color: black;
+}
 /* Hero Section End */
 
   
