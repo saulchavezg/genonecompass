@@ -19,18 +19,26 @@
     --border-radius-m: 8px;
 }
 
-/* Header / Navbar */
+/* Body Start */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.6;
+}
+/* Body End */
+
+
+/* Header / Navbar Start */
 
 .main {
     width: 100%;
-    background-color: #f9f8f3;
     padding: 1rem 0rem;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #e0e0e0; 
+    border-bottom: 1px solid black; 
 }
 
-.navbar {
+.navbar {   
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -48,7 +56,6 @@
     align-items: center;
     flex-shrink: 0;
     width: 200px;
-    gap: 0.01rem;
     float: left;
     margin-top: -0.5rem;
     height: 70px;
@@ -62,7 +69,6 @@
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: flex;
-    
     align-items: center;
     flex-wrap: wrap;
 }
@@ -102,10 +108,8 @@ ul li {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    margin-left: -0.2rem;
     display: block;
     white-space: nowrap;
-    padding: 0.5rem 0;
 }
 
 
@@ -123,17 +127,19 @@ ul li {
 }
 
 
-/* Header / Navbar */
+/* Header / Navbar End */
+
+/* Hero Section Start */
 
 .hero-section {
-    min-height: 100vh;
-    background: var(--primary-color);
+    margin-left: 50px;
+    margin-top: 50px;
+
 }
 
 .hero-section .section-content {
     display: flex;
-    align-items: center;
-    min-height: 100vh;
+    align-items: flex-start;
     color: var(--white-color);
     justify-content: space-between;
 
@@ -143,28 +149,39 @@ ul li {
 .hero-section .hero-details .title{
     font-size: var(--font-size-xxl);
     color: var(--secondary-color);
-    font-family: "Miniver", sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
+
 
 .hero-section .hero-details .subtitle {
     margin-top: 8px;
-    max-width: 10%;
+    max-width: 600px; /* Use a pixel value for better control */
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
+    white-space: normal; /* Allow normal wrapping */
+    word-break: normal;  /* Prevent breaking words unnecessarily */
+    line-height: 1.3;  
+    text-align: center;
 }
 
 .hero-section .hero-details .description {
-    margin-top: 200%;
-    margin: 24px 0 40px;
+    margin-top: 2rem;
+    margin: 24px 0 6px;
     font-size: var(--font-size-m);
+    color: black;
+    line-height: 1.3;
+    max-width: 600px;
+    text-align: center;
 
 }
 
 .hero-section .hero-details .buttons {
     display: flex;
+    justify-content: center;
     gap: 23px
-
-
 }
 
 .hero-section .hero-details .button {
@@ -186,8 +203,9 @@ ul li {
 
 .hero-section .hero-details .contact-info {
     color: var(--white-color);
-    border-color: white;
+    border-color: black;
     background: transparent;
+    color: black;
 }
 
 .hero-section .hero-details .contact-info:hover {
@@ -195,6 +213,10 @@ ul li {
     border-color: (--secondary-color);
     background-color: var(--secondary-color);
 }
+
+
+/* Hero Section End */
+
   
 
 
