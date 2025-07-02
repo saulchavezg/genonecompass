@@ -219,5 +219,13 @@ ul li {
 }
 /* Hero Section End */
 
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1; }
+
   
 
