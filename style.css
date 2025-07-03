@@ -228,4 +228,13 @@ ul li {
 
 /* Hero Section End */
   
+/* Footer */
+
+.footer-section {
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
 
