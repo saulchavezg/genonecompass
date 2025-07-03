@@ -216,16 +216,16 @@ ul li {
 .hero-image-wrapper .hero-quote {
     color: black;
     text-align: center;
+
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
 }
+
+
+.hero-image-wrapper .hero-quote-fade-out {
+    opacity: 0; 
+}
+
 /* Hero Section End */
-
-
-.fade-out {
-    opacity: 0;
-}
-
-.fade-in {
-    opacity: 1; }
-
   
 
